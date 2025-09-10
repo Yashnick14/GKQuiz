@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>General Knowledge Quiz</title>
+
+  <!-- Poppins font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>[hidden]{ display:none !important; }</style>
+</head>
+<body>
+  <!-- Toast container -->
+  <div id="msgContainer" class="msg-container" aria-live="polite"></div>
+
+  <div class="app card" id="app">
+    <header>
+      <h1>General Knowledge Quiz</h1>
+      <div class="badge" id="progressBadge"></div>
+    </header>
+
+    <main>
+      <!-- Start Screen -->
+      <section id="startScreen" class="panel start" aria-label="Start Quiz">
+        <div class="muted">
+          Enter your name and click Start. You must answer every question.
+        </div>
+        <label>
+          
+          <input type="text" id="studentName" placeholder="Your name" autocomplete="name" />
+        </label>
+        <div>
+          <button class="btn primary" id="startBtn">Start Quiz</button>
+        </div>
+      </section>
+
+      <!-- Quiz Screen -->
+      <section id="quizScreen" class="panel quiz" hidden aria-live="polite">
+        <div class="qcard">
+          <div class="qhead">
+            <span id="qCounter" class="qnumber">Q 1</span>
+            <h2 id="qTitle" class="qtitle"><span id="qText">Question text…</span></h2>
+          </div>
+
+          <div class="options" id="options"></div>
+
+          <div class="controls">
+            <div class="left">
+              <span class="muted">Selected: <span id="selectionStatus">—</span></span>
+            </div>
+            <div>
+              <button class="prevBtn" id="prevBtn">Previous</button>
+              <button class="nextBtn" id="nextBtn">Next</button>
+              <button class="btn primary" id="finishBtn" disabled>Finish</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Result Screen -->
+      <section id="resultScreen" class="panel" hidden>
+        <h2 class="result-title">Your Score</h2>
+
+        <div class="result-grid">
+<div class="score-card">
+  <div class="ring-wrap">
+    <div id="scoreRing" class="ring" style="--value:0">
+      <div class="ring-center">
+        <div class="ring-score"><span id="resPercent">0</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="ring-outof">out of 60</div>
+</div>
+
+
+          <div class="summary-right">
+            <div class="sum-card ok-card">
+              <div class="sum-title">Correct Questions</div>
+              <div class="sum-count"><span id="correctCount">0</span> Questions</div>
+              <!-- <div class="sum-icon ok">✔</div> -->
+            </div>
+            <div class="sum-card bad-card">
+              <div class="sum-title">Incorrect Questions</div>
+              <div class="sum-count"><span id="incorrectCount">0</span> Questions</div>
+            </div>
+
+            <div class="sum-extra">Time taken: <b><span id="resTime">00:00</span></b></div>
+
+            <div class="result-actions">
+              <button class="btn primary" id="retryBtn">Retry</button>
+              <button class="reviewBtn" id="reviewBtn">Review answers</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer">
+      <div class="footer-caption">
+        © 2025 • Designed by <span class="brand">Yashnick</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

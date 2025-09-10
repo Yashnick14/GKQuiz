@@ -1,0 +1,560 @@
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
+  --border: #e2e8f0;
+  --frame: #f8fafc;
+
+  --text: #1e293b;
+  --muted: #64748b;
+  --primary: #0ea5e9;
+  --primary-dark: #0284c7;
+  --correct: #16a34a;
+  --incorrect: #dc2626;
+
+  --ring-blue: #0ea5e9;
+  --ring-track: #e5e7eb;
+  --ring-glow: rgba(14, 165, 233, 0.3);
+
+  --chip-fail-bg: #fee2e2;
+  --chip-fail-bd: #fecaca;
+  --chip-fail-tx: #b91c1c;
+  --chip-pass-bg: #dcfce7;
+  --chip-pass-bd: #bbf7d0;
+  --chip-pass-tx: #166534;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", system-ui, sans-serif;
+  background: var(--bg) url("bg.png") no-repeat center center fixed;
+  background-size: cover; /* makes it fill the screen */
+  color: var(--text);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  font-size: 16px; /* Base font size */
+}
+
+.app {
+  width: 100%;
+  max-width: 980px;
+}
+.card {
+  background: #ffffff50;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--border);
+  background: #f9fafb;
+  position: sticky;
+  top: 0;
+}
+header h1 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 800;
+}
+header .badge {
+  margin-left: auto;
+  font-size: 15px;
+  color: var(--muted);
+}
+main {
+  padding: 24px;
+  display: grid;
+  gap: 20px;
+}
+
+/* Panels */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+}
+.start {
+  display: grid;
+  gap: 14px;
+}
+.muted {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+.small {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.start input[type="text"] {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  appearance: none;
+  border: none;
+  background: var(--surface-2);
+  color: var(--text);
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  background: #e2e8f0;
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.btn.primary {
+  background: #000000;
+  color: #fff;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 12px rgba(2, 39, 56, 0.35); */
+}
+.btn.primary:hover {
+  background-color: #5b5b5b;
+}
+
+.nextBtn {
+  background-color: #ffffff;
+  border: 1px solid #0000002a;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.prevBtn {
+  background-color: #ffffff;
+  border: 1px solid #0000002a;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.nextBtn:hover {
+  background-color: #e2e8f0;
+}
+
+.prevBtn:hover {
+  background-color: #e2e8f0;
+}
+
+.reviewBtn {
+  background-color: #ffffff;
+  border: 1px solid #0000002a;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.reviewBtn:hover {
+  background-color: #e2e8f0;
+}
+
+/* Quiz */
+.qcard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+.qhead {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.qnumber {
+  font-weight: 700;
+  font-size: 22px;
+}
+.qtitle {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+/* Options grid */
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 14px;
+}
+@media (max-width: 720px) {
+  .options {
+    grid-template-columns: 1fr;
+  }
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--surface-2);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.option:hover {
+  background: #f8fafc;
+  border-color: var(--primary);
+}
+.option input {
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  accent-color: var(--primary);
+}
+.option.correct {
+  background: #dcfce7;
+  border-color: var(--correct);
+}
+.option.incorrect {
+  background: #fee2e2;
+  border-color: var(--incorrect);
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.left {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* Footer */
+.footer {
+  padding: 18px 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+}
+.footer .brand {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Results */
+.result-title {
+  margin: 4px 0 16px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* left + right */
+  gap: 40px;
+  align-items: center;
+}
+
+@media (max-width: 860px) {
+  .result-grid {
+    grid-template-columns: 1fr; /* stack for small screens */
+    text-align: center;
+  }
+}
+
+.score-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+  margin: 0 auto; /* centers the score card in its grid cell */
+}
+.ring {
+  --size: 190px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: conic-gradient(
+    var(--ring-blue) calc(var(--value) * 1%),
+    var(--ring-track) 0
+  );
+  box-shadow: 0 0 20px var(--ring-glow);
+}
+.ring-center {
+  width: calc(var(--size) - 26px);
+  height: calc(var(--size) - 26px);
+  border-radius: 50%;
+  background: #fff;
+  display: grid;
+  place-items: center;
+}
+.ring-score {
+  font-size: 44px;
+  font-weight: 800;
+  color: var(--ring-blue);
+}
+.ring-outof {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.status-chip {
+  margin-top: 14px;
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 15px;
+}
+.status-chip.pass {
+  background: var(--chip-pass-bg);
+  border: 1px solid var(--chip-pass-bd);
+  color: var(--chip-pass-tx);
+}
+.status-chip.fail {
+  background: var(--chip-fail-bg);
+  border: 1px solid var(--chip-fail-bd);
+  color: var(--chip-fail-tx);
+}
+
+/* Summary cards */
+.summary-right {
+  display: grid;
+  gap: 14px;
+}
+.sum-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  font-size: 16px;
+}
+.sum-title {
+  font-weight: 600;
+  color: var(--muted);
+}
+.sum-count {
+  font-size: 20px;
+  font-weight: 700;
+}
+.sum-icon {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  color: #fff;
+}
+.sum-icon.ok {
+  background: var(--correct);
+}
+.sum-icon.bad {
+  background: var(--incorrect);
+}
+
+/* Error Toast */
+.msg-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+  max-width: 90%;
+  width: 540px;
+}
+.msg-error {
+  display: flex;
+  align-items: center;
+  color: var(--incorrect);
+  background: #fee2e2;
+  border-radius: 10px;
+  height: 48px;
+  border: 1px solid var(--border);
+  animation: toastIn 0.22s ease-out;
+}
+.msg-error .bar {
+  height: 100%;
+  width: 6px;
+  background: var(--incorrect);
+}
+.msg-error .content {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  flex: 1;
+  gap: 8px;
+}
+.msg-error .content p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ====== RESPONSIVENESS ====== */
+
+/* Smallest phones (320px wide) */
+@media (max-width: 320px) {
+  body {
+    font-size: 14px; /* reduce base font */
+    padding: 12px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  .qtitle {
+    font-size: 18px;
+  }
+  .option {
+    font-size: 14px;
+    padding: 12px;
+  }
+  .ring {
+    --size: 150px; /* smaller score circle */
+  }
+  .ring-score {
+    font-size: 32px;
+  }
+}
+
+/* iPhone size (375px) */
+@media (max-width: 375px) {
+  header h1 {
+    font-size: 22px;
+  }
+  .qtitle {
+    font-size: 20px;
+  }
+  .option {
+    font-size: 15px;
+    padding: 14px;
+  }
+  .ring {
+    --size: 170px;
+  }
+  .ring-score {
+    font-size: 36px;
+  }
+}
+
+/* Larger phones (425px) */
+@media (max-width: 425px) {
+  header h1 {
+    font-size: 24px;
+  }
+  .qtitle {
+    font-size: 21px;
+  }
+  .options {
+    grid-template-columns: 1fr; /* single column answers */
+  }
+  .ring {
+    --size: 180px;
+  }
+}
+
+/* Tablets (768px) */
+@media (max-width: 768px) {
+  .app {
+    max-width: 100%;
+  }
+  .result-grid {
+    grid-template-columns: 1fr; /* stack score + summary */
+    text-align: center;
+  }
+  .summary-right {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .qtitle {
+    font-size: 22px;
+  }
+  .option {
+    font-size: 16px;
+  }
+}
+/* Small laptops & large tablets (1024px) */
+@media (max-width: 1024px) {
+  .app {
+    max-width: 90%; /* prevent full-width stretching */
+  }
+  .result-grid {
+    grid-template-columns: 1fr 1fr; /* keep two-column layout */
+    gap: 24px; /* reduce gap a bit */
+  }
+  .score-card {
+    padding: 30px;
+  }
+  .ring {
+    --size: 200px; /* slightly smaller ring for balance */
+  }
+  .ring-score {
+    font-size: 40px;
+  }
+  .summary-right {
+    gap: 12px;
+  }
+  .sum-card {
+    font-size: 15px;
+    padding: 16px;
+  }
+}
