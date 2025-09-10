@@ -21,376 +21,376 @@ let QUESTIONS = [
     options: ["Cricket", "Hockey", "Football", "Volleyball"],
     answerIndex: 3,
   },
-  // {
-  //   text: "A publication started in 1935 was named after which bird?",
-  //   options: ["Penguin", "Peacock", "Eagle", "Dove"],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "What is the name of the first child of a sitting US President to have been born in the White House?",
-  //   options: [
-  //     "Robert Tyler",
-  //     "Esther Cleveland",
-  //     "Robert Todd Lincoln",
-  //     "Caroline Kennedy",
-  //   ],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "Which of these is the largest living reptile by weight?",
-  //   options: [
-  //     "Komodo dragon",
-  //     "Saltwater crocodile",
-  //     "Monitor lizard",
-  //     "Anaconda",
-  //   ],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "The English name for which of these items has its origin in an Indian language?",
-  //   options: ["Ginger", "Banana", "Pumpkin", "Coffee"],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "Who among these has written books titled 'Becoming' and 'The Light We Carry'?",
-  //   options: [
-  //     "Michelle Obama",
-  //     "Hillary Clinton",
-  //     "Oprah Gail Winfrey",
-  //     "Melania Trump",
-  //   ],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "Which animal has the heaviest and largest brain?",
-  //   options: ["Blue Whale", "Sperm Whale", "Humpback whale", "Orca"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "Nicholas Sarkozy, who was sentenced to jail on grounds of corruption in March 2021, is the former President of which country?",
-  //   options: ["Belgium", "France", "Norway", "Poland"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "Premier League, La Liga, Serie A are some of the top most leagues associated with which game?",
-  //   options: ["Handball", "Cricket", "Netball", "Football"],
-  //   answerIndex: 3,
-  // },
-  // {
-  //   text: "In 2021, Anita Anand took charge as the Minister of National Defence of which country?",
-  //   options: ["Canada", "Norway", "United Kingdom", "Fiji"],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "Which of these English phrases means 'to finish something spectacularly'?",
-  //   options: [
-  //     "Apple of the eye",
-  //     "Tit for tat",
-  //     "Time is money",
-  //     "Go out with a bang",
-  //   ],
-  //   answerIndex: 3,
-  // },
-  // {
-  //   text: "Who is the author of War and Peace?",
-  //   options: [
-  //     "Leo Tolstoy",
-  //     "William Shakespeare",
-  //     "Fyodor Dostoevsky",
-  //     "Charles Dickens",
-  //   ],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "To whom did Dr APJ Abdul Kalam pay tribute in his first address in 2003 to the Parliament as the President of India?",
-  //   options: [
-  //     "Dr Vikram Sarabhai",
-  //     "Dr Homi J Bhabha",
-  //     "Prof Satish Dhawan",
-  //     "Kalpana Chawla",
-  //   ],
-  //   answerIndex: 3,
-  // },
-  // {
-  //   text: "In 2021, Bhavani Devi became the first Indian to qualify for which Olympic event?",
-  //   options: ["Equestrian", "Cycling", "Canoeing", "Fencing"],
-  //   answerIndex: 3,
-  // },
-  // {
-  //   text: "Which is the oldest of the seven wonders of the Ancient world?",
-  //   options: [
-  //     "Temple of Artemis",
-  //     "Pyramid of Giza",
-  //     "Statue of Zeus",
-  //     "Pharos of Alexandria",
-  //   ],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "Which common portfolio have Rajnath Singh, Nirmala Sitharaman and Arun Jaitley all held in the Union cabinet?",
-  //   options: ["Home", "Finance", "Defence", "Law & Justice"],
-  //   answerIndex: 2,
-  // },
-  // {
-  //   text: "If you were buying something in Rubles, in which of these countries would you most likely be?",
-  //   options: ["Germany", "Russia", "Egypt", "Japan"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "Which of these is common to the Prime Minister of the UK and the Vice President of the USA, as of October 2022?",
-  //   options: [
-  //     "Both are Women",
-  //     "Both are Men",
-  //     "Both are below 40 years of age",
-  //     "Both are Indian descent",
-  //   ],
-  //   answerIndex: 3,
-  // },
-  // {
-  //   text: "What material was Michelangelo's David sculpted from?",
-  //   options: ["Wood", "Glass", "Iron", "Marble"],
-  //   answerIndex: 3,
-  // },
-  // {
-  //   text: "Which of these is not a Japanese island?",
-  //   options: ["Fiji", "Shikoku", "Kyushu", "Okinawa"],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "Which of these companies was the first to record a market capitalization of over one trillion dollars?",
-  //   options: ["PetroChaina", "Apple", "Saudi Aramco", "IBM"],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "John Lennon and Ringo Starr were a part of which band?",
-  //   options: ["Queen", "The Beatles", "Led Zeppelin", "Black Sabbath"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "After which revolutionary was the Vietnamese city of Saigon renamed?",
-  //   options: ["Mao Zedong", "Ho Chi Minh", "Pol Pot", "Sun Yat-sen"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "Which civilian astronaut was the first school teacher selected by NASA to travel to space?",
-  //   options: [
-  //     "Eileen Collins",
-  //     "Anna Lee Fisher",
-  //     "Christa McAuliffe",
-  //     "Mae Jemison",
-  //   ],
-  //   answerIndex: 2,
-  // },
-  // {
-  //   text: "Mount Fuji is the tallest mountain of which country?",
-  //   options: ["Singapore", "Japan", "Thailand", "Indonesia"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "Which is the widest river in the world?",
-  //   options: ["Nile", "Yangtze", "Amazon", "Danube"],
-  //   answerIndex: 2,
-  // },
-  // {
-  //   text: "Which is the longest river in the world?",
-  //   options: ["Nile", "Amazon", "Yangtze", "Missouri"],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "Which chemical element is named after a husband-wife duo?",
-  //   options: ["Bohrium", "Curium", "Fermium", "Seaborgium"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "Who among the following is not a Nobel prize winner?",
-  //   options: [
-  //     "Mahatma Gandhi",
-  //     "Rabindranath Tagore",
-  //     "C. V. Raman",
-  //     "Mother Teresa",
-  //   ],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "Which of these is an International Symbol of Peace?",
-  //   options: ["Owl", "Crow", "Dove", "Duck"],
-  //   answerIndex: 2,
-  // },
-  // {
-  //   text: "Leaders like Zhou Elai, Deng Xiaoping, and Mao Zedong are from which country?",
-  //   options: ["China", "Japan", "Taiwan", "Vietnam"],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "Christopher Hipkins became the Prime Minister of which country in 2023?",
-  //   options: ["Australia", "New Zealand", "Brazil", "Jamaica"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "Which team’s cricket World Cup winning captains include Steve Waugh and Ricky Ponting?",
-  //   options: ["New Zealand", "England", "Australia", "West Indies"],
-  //   answerIndex: 2,
-  // },
-  // {
-  //   text: "In which city is the Parliament of India located?",
-  //   options: ["Mumbai", "New Delhi", "Kolkata", "Ahmedabad"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "The name of which of these countries and its capital starts with the same letter?",
-  //   options: ["Chile", "New Zealand", "South Africa", "Belgium"],
-  //   answerIndex: 3,
-  // },
-  // {
-  //   text: "Who directed the film Gandhi?",
-  //   options: [
-  //     "Steven Spielberg",
-  //     "James Cameron",
-  //     "Christopher Nolan",
-  //     "Richard Attenborough",
-  //   ],
-  //   answerIndex: 3,
-  // },
-  // {
-  //   text: "Which actor played Mahatma Gandhi in the movie Gandhi?",
-  //   options: [
-  //     "Ben Kingsley",
-  //     "Robert De Niro",
-  //     "Daniel Day-Lewis",
-  //     "Harrison Ford",
-  //   ],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "Stephen Hawking wrote a book titled 'A Brief History of' what?",
-  //   options: ["Time", "Space", "Life", "Gravity"],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "Which of these sporting events has not featured in some editions of the modern summer Olympic games?",
-  //   options: ["Fencing", "Swimming", "Artistic Gymnastics", "Archery"],
-  //   answerIndex: 3,
-  // },
-  // {
-  //   text: "Which of these countries is located on the same continent as India?",
-  //   options: ["Uganda", "Thailand", "Colombia", "New Zealand"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "In which country the Buddha was born?",
-  //   options: ["India", "China", "Thailand", "Nepal"],
-  //   answerIndex: 3,
-  // },
-  // {
-  //   text: "In which country did the Olympic games originate?",
-  //   options: ["Greece", "Spain", "Italy", "Russia"],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "The island of Bali is part of which country?",
-  //   options: ["Thailand", "Sri Lanka", "Indonesia", "Japan"],
-  //   answerIndex: 2,
-  // },
-  // {
-  //   text: "What is the national animal of Australia?",
-  //   options: ["Emu", "Platypus", "Kangaroo", "Koala"],
-  //   answerIndex: 2,
-  // },
-  // {
-  //   text: "Who wrote the 'Harry Potter' series?",
-  //   options: [
-  //     "J. K. Rowling",
-  //     "George R.R. Martin",
-  //     "Stephenie Meyer",
-  //     "George Orwell",
-  //   ],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "How many states are in the United States of America?",
-  //   options: ["50 States", "52 States", "45 States", "48 States"],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "In which sports is the player's height considered an advantage?",
-  //   options: ["Football", "Basketball", "Cricket", "Hockey"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "Which country has a bible on its flag?",
-  //   options: ["Germany", "Dominican Republic", "Vatican City", "Greece"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "Which country started the tradition of putting up a Christmas tree?",
-  //   options: ["Germany", "U.S.A.", "United Kingdom", "United States", "France"],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "How old was Princess Diana when she died?",
-  //   options: ["39 Years", "36 Years", "42 Years", "47 Years"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "In which currency is 'In God We Trust' written?",
-  //   options: ["United Kingdom", "United States", "Canada", "Australia"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "Which Tamil singer was honoured by the United Nations by issuing a Postage stamp?",
-  //   options: [
-  //     "P. Susheela",
-  //     "S. Janaki",
-  //     "Bombay Jayashri",
-  //     "M. S. Subbulakshmi",
-  //   ],
-  //   answerIndex: 3,
-  // },
-  // {
-  //   text: "Who is the only Indian Carnatic music vocalist nominated for an Oscar 2013 in the original song category for Life of Pi lullaby?",
-  //   options: [
-  //     "P. Susheela",
-  //     "S. Janaki",
-  //     "Bombay Jayashri",
-  //     "Nithyasree Mahadevan",
-  //   ],
-  //   answerIndex: 2,
-  // },
-  // {
-  //   text: "What was the first country to allow women to vote?",
-  //   options: ["United Kingdom", "United States", "New Zealand", "Australia"],
-  //   answerIndex: 2,
-  // },
-  // {
-  //   text: "The Red Cross was born in 1863 in what country?",
-  //   options: ["Norway", "Switzerland", "United States", "United Kingdom"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "Who has won the most Olympic medals?",
-  //   options: [
-  //     "Michael Phelps",
-  //     "Larisa Latynina",
-  //     "Marit Bjorgen",
-  //     "Niokolay Andrianov",
-  //   ],
-  //   answerIndex: 0,
-  // },
-  // {
-  //   text: "What was the nationality of the artist Picasso?",
-  //   options: ["Italy", "Spain", "France", "Germany"],
-  //   answerIndex: 1,
-  // },
-  // {
-  //   text: "Which world leader was assassinated by members of her own bodyguard in 1984?",
-  //   options: [
-  //     "Margaret Thatcher",
-  //     "Indira Gandhi",
-  //     "Khaleda Zia",
-  //     "Benazir Bhutto",
-  //   ],
-  //   answerIndex: 1,
-  // },
+  {
+    text: "A publication started in 1935 was named after which bird?",
+    options: ["Penguin", "Peacock", "Eagle", "Dove"],
+    answerIndex: 0,
+  },
+  {
+    text: "What is the name of the first child of a sitting US President to have been born in the White House?",
+    options: [
+      "Robert Tyler",
+      "Esther Cleveland",
+      "Robert Todd Lincoln",
+      "Caroline Kennedy",
+    ],
+    answerIndex: 1,
+  },
+  {
+    text: "Which of these is the largest living reptile by weight?",
+    options: [
+      "Komodo dragon",
+      "Saltwater crocodile",
+      "Monitor lizard",
+      "Anaconda",
+    ],
+    answerIndex: 1,
+  },
+  {
+    text: "The English name for which of these items has its origin in an Indian language?",
+    options: ["Ginger", "Banana", "Pumpkin", "Coffee"],
+    answerIndex: 0,
+  },
+  {
+    text: "Who among these has written books titled 'Becoming' and 'The Light We Carry'?",
+    options: [
+      "Michelle Obama",
+      "Hillary Clinton",
+      "Oprah Gail Winfrey",
+      "Melania Trump",
+    ],
+    answerIndex: 0,
+  },
+  {
+    text: "Which animal has the heaviest and largest brain?",
+    options: ["Blue Whale", "Sperm Whale", "Humpback whale", "Orca"],
+    answerIndex: 1,
+  },
+  {
+    text: "Nicholas Sarkozy, who was sentenced to jail on grounds of corruption in March 2021, is the former President of which country?",
+    options: ["Belgium", "France", "Norway", "Poland"],
+    answerIndex: 1,
+  },
+  {
+    text: "Premier League, La Liga, Serie A are some of the top most leagues associated with which game?",
+    options: ["Handball", "Cricket", "Netball", "Football"],
+    answerIndex: 3,
+  },
+  {
+    text: "In 2021, Anita Anand took charge as the Minister of National Defence of which country?",
+    options: ["Canada", "Norway", "United Kingdom", "Fiji"],
+    answerIndex: 0,
+  },
+  {
+    text: "Which of these English phrases means 'to finish something spectacularly'?",
+    options: [
+      "Apple of the eye",
+      "Tit for tat",
+      "Time is money",
+      "Go out with a bang",
+    ],
+    answerIndex: 3,
+  },
+  {
+    text: "Who is the author of War and Peace?",
+    options: [
+      "Leo Tolstoy",
+      "William Shakespeare",
+      "Fyodor Dostoevsky",
+      "Charles Dickens",
+    ],
+    answerIndex: 0,
+  },
+  {
+    text: "To whom did Dr APJ Abdul Kalam pay tribute in his first address in 2003 to the Parliament as the President of India?",
+    options: [
+      "Dr Vikram Sarabhai",
+      "Dr Homi J Bhabha",
+      "Prof Satish Dhawan",
+      "Kalpana Chawla",
+    ],
+    answerIndex: 3,
+  },
+  {
+    text: "In 2021, Bhavani Devi became the first Indian to qualify for which Olympic event?",
+    options: ["Equestrian", "Cycling", "Canoeing", "Fencing"],
+    answerIndex: 3,
+  },
+  {
+    text: "Which is the oldest of the seven wonders of the Ancient world?",
+    options: [
+      "Temple of Artemis",
+      "Pyramid of Giza",
+      "Statue of Zeus",
+      "Pharos of Alexandria",
+    ],
+    answerIndex: 1,
+  },
+  {
+    text: "Which common portfolio have Rajnath Singh, Nirmala Sitharaman and Arun Jaitley all held in the Union cabinet?",
+    options: ["Home", "Finance", "Defence", "Law & Justice"],
+    answerIndex: 2,
+  },
+  {
+    text: "If you were buying something in Rubles, in which of these countries would you most likely be?",
+    options: ["Germany", "Russia", "Egypt", "Japan"],
+    answerIndex: 1,
+  },
+  {
+    text: "Which of these is common to the Prime Minister of the UK and the Vice President of the USA, as of October 2022?",
+    options: [
+      "Both are Women",
+      "Both are Men",
+      "Both are below 40 years of age",
+      "Both are Indian descent",
+    ],
+    answerIndex: 3,
+  },
+  {
+    text: "What material was Michelangelo's David sculpted from?",
+    options: ["Wood", "Glass", "Iron", "Marble"],
+    answerIndex: 3,
+  },
+  {
+    text: "Which of these is not a Japanese island?",
+    options: ["Fiji", "Shikoku", "Kyushu", "Okinawa"],
+    answerIndex: 0,
+  },
+  {
+    text: "Which of these companies was the first to record a market capitalization of over one trillion dollars?",
+    options: ["PetroChaina", "Apple", "Saudi Aramco", "IBM"],
+    answerIndex: 0,
+  },
+  {
+    text: "John Lennon and Ringo Starr were a part of which band?",
+    options: ["Queen", "The Beatles", "Led Zeppelin", "Black Sabbath"],
+    answerIndex: 1,
+  },
+  {
+    text: "After which revolutionary was the Vietnamese city of Saigon renamed?",
+    options: ["Mao Zedong", "Ho Chi Minh", "Pol Pot", "Sun Yat-sen"],
+    answerIndex: 1,
+  },
+  {
+    text: "Which civilian astronaut was the first school teacher selected by NASA to travel to space?",
+    options: [
+      "Eileen Collins",
+      "Anna Lee Fisher",
+      "Christa McAuliffe",
+      "Mae Jemison",
+    ],
+    answerIndex: 2,
+  },
+  {
+    text: "Mount Fuji is the tallest mountain of which country?",
+    options: ["Singapore", "Japan", "Thailand", "Indonesia"],
+    answerIndex: 1,
+  },
+  {
+    text: "Which is the widest river in the world?",
+    options: ["Nile", "Yangtze", "Amazon", "Danube"],
+    answerIndex: 2,
+  },
+  {
+    text: "Which is the longest river in the world?",
+    options: ["Nile", "Amazon", "Yangtze", "Missouri"],
+    answerIndex: 0,
+  },
+  {
+    text: "Which chemical element is named after a husband-wife duo?",
+    options: ["Bohrium", "Curium", "Fermium", "Seaborgium"],
+    answerIndex: 1,
+  },
+  {
+    text: "Who among the following is not a Nobel prize winner?",
+    options: [
+      "Mahatma Gandhi",
+      "Rabindranath Tagore",
+      "C. V. Raman",
+      "Mother Teresa",
+    ],
+    answerIndex: 0,
+  },
+  {
+    text: "Which of these is an International Symbol of Peace?",
+    options: ["Owl", "Crow", "Dove", "Duck"],
+    answerIndex: 2,
+  },
+  {
+    text: "Leaders like Zhou Elai, Deng Xiaoping, and Mao Zedong are from which country?",
+    options: ["China", "Japan", "Taiwan", "Vietnam"],
+    answerIndex: 0,
+  },
+  {
+    text: "Christopher Hipkins became the Prime Minister of which country in 2023?",
+    options: ["Australia", "New Zealand", "Brazil", "Jamaica"],
+    answerIndex: 1,
+  },
+  {
+    text: "Which team’s cricket World Cup winning captains include Steve Waugh and Ricky Ponting?",
+    options: ["New Zealand", "England", "Australia", "West Indies"],
+    answerIndex: 2,
+  },
+  {
+    text: "In which city is the Parliament of India located?",
+    options: ["Mumbai", "New Delhi", "Kolkata", "Ahmedabad"],
+    answerIndex: 1,
+  },
+  {
+    text: "The name of which of these countries and its capital starts with the same letter?",
+    options: ["Chile", "New Zealand", "South Africa", "Belgium"],
+    answerIndex: 3,
+  },
+  {
+    text: "Who directed the film Gandhi?",
+    options: [
+      "Steven Spielberg",
+      "James Cameron",
+      "Christopher Nolan",
+      "Richard Attenborough",
+    ],
+    answerIndex: 3,
+  },
+  {
+    text: "Which actor played Mahatma Gandhi in the movie Gandhi?",
+    options: [
+      "Ben Kingsley",
+      "Robert De Niro",
+      "Daniel Day-Lewis",
+      "Harrison Ford",
+    ],
+    answerIndex: 0,
+  },
+  {
+    text: "Stephen Hawking wrote a book titled 'A Brief History of' what?",
+    options: ["Time", "Space", "Life", "Gravity"],
+    answerIndex: 0,
+  },
+  {
+    text: "Which of these sporting events has not featured in some editions of the modern summer Olympic games?",
+    options: ["Fencing", "Swimming", "Artistic Gymnastics", "Archery"],
+    answerIndex: 3,
+  },
+  {
+    text: "Which of these countries is located on the same continent as India?",
+    options: ["Uganda", "Thailand", "Colombia", "New Zealand"],
+    answerIndex: 1,
+  },
+  {
+    text: "In which country the Buddha was born?",
+    options: ["India", "China", "Thailand", "Nepal"],
+    answerIndex: 3,
+  },
+  {
+    text: "In which country did the Olympic games originate?",
+    options: ["Greece", "Spain", "Italy", "Russia"],
+    answerIndex: 0,
+  },
+  {
+    text: "The island of Bali is part of which country?",
+    options: ["Thailand", "Sri Lanka", "Indonesia", "Japan"],
+    answerIndex: 2,
+  },
+  {
+    text: "What is the national animal of Australia?",
+    options: ["Emu", "Platypus", "Kangaroo", "Koala"],
+    answerIndex: 2,
+  },
+  {
+    text: "Who wrote the 'Harry Potter' series?",
+    options: [
+      "J. K. Rowling",
+      "George R.R. Martin",
+      "Stephenie Meyer",
+      "George Orwell",
+    ],
+    answerIndex: 0,
+  },
+  {
+    text: "How many states are in the United States of America?",
+    options: ["50 States", "52 States", "45 States", "48 States"],
+    answerIndex: 0,
+  },
+  {
+    text: "In which sports is the player's height considered an advantage?",
+    options: ["Football", "Basketball", "Cricket", "Hockey"],
+    answerIndex: 1,
+  },
+  {
+    text: "Which country has a bible on its flag?",
+    options: ["Germany", "Dominican Republic", "Vatican City", "Greece"],
+    answerIndex: 1,
+  },
+  {
+    text: "Which country started the tradition of putting up a Christmas tree?",
+    options: ["Germany", "U.S.A.", "United Kingdom", "United States", "France"],
+    answerIndex: 0,
+  },
+  {
+    text: "How old was Princess Diana when she died?",
+    options: ["39 Years", "36 Years", "42 Years", "47 Years"],
+    answerIndex: 1,
+  },
+  {
+    text: "In which currency is 'In God We Trust' written?",
+    options: ["United Kingdom", "United States", "Canada", "Australia"],
+    answerIndex: 1,
+  },
+  {
+    text: "Which Tamil singer was honoured by the United Nations by issuing a Postage stamp?",
+    options: [
+      "P. Susheela",
+      "S. Janaki",
+      "Bombay Jayashri",
+      "M. S. Subbulakshmi",
+    ],
+    answerIndex: 3,
+  },
+  {
+    text: "Who is the only Indian Carnatic music vocalist nominated for an Oscar 2013 in the original song category for Life of Pi lullaby?",
+    options: [
+      "P. Susheela",
+      "S. Janaki",
+      "Bombay Jayashri",
+      "Nithyasree Mahadevan",
+    ],
+    answerIndex: 2,
+  },
+  {
+    text: "What was the first country to allow women to vote?",
+    options: ["United Kingdom", "United States", "New Zealand", "Australia"],
+    answerIndex: 2,
+  },
+  {
+    text: "The Red Cross was born in 1863 in what country?",
+    options: ["Norway", "Switzerland", "United States", "United Kingdom"],
+    answerIndex: 1,
+  },
+  {
+    text: "Who has won the most Olympic medals?",
+    options: [
+      "Michael Phelps",
+      "Larisa Latynina",
+      "Marit Bjorgen",
+      "Niokolay Andrianov",
+    ],
+    answerIndex: 0,
+  },
+  {
+    text: "What was the nationality of the artist Picasso?",
+    options: ["Italy", "Spain", "France", "Germany"],
+    answerIndex: 1,
+  },
+  {
+    text: "Which world leader was assassinated by members of her own bodyguard in 1984?",
+    options: [
+      "Margaret Thatcher",
+      "Indira Gandhi",
+      "Khaleda Zia",
+      "Benazir Bhutto",
+    ],
+    answerIndex: 1,
+  },
 ];
 
 /* ---------- STATE ---------- */
@@ -632,3 +632,4 @@ els.reviewBtn.addEventListener("click", () => {
 (function init() {
   // els.footerInfo.textContent = new Date().toLocaleString();
 })();
+
