@@ -1,5 +1,8 @@
-/* ---------- QUESTIONS (replace with your 100 later) ---------- */
-/* ---------- QUESTIONS (replace with your 100 later) ---------- */
+/* ---------- PROTECTION ---------- */
+if (sessionStorage.getItem("quizAccess") !== "granted") {
+  window.location.href = "lockscreen.html";
+}
+
 let QUESTIONS = [
   {
     text: "In 2019, in which country did a 34-year-old woman become the world's youngest Prime Minister?",
@@ -632,4 +635,5 @@ els.reviewBtn.addEventListener("click", () => {
 (function init() {
   // els.footerInfo.textContent = new Date().toLocaleString();
 })();
+
 
